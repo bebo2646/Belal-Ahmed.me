@@ -137,34 +137,70 @@
         <div class="absolute top-[40%] right-[20%] w-2 h-2 bg-ramadanGold rounded-full animate-twinkle shadow-[0_0_12px_#FBBF24]" style="animation-delay: 1s;"></div>
     </div>
 
-    <!-- 🌟 شريط التنقل 🌟 -->
-    <nav class="fixed w-full z-50 top-6 px-6">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="#" class="text-white text-xl font-bold flex items-center gap-2" onclick="switchPage('home'); return false;">
-                
+ <!-- 🌟 شريط التنقل 🌟 -->
+<nav class="w-full mt-16 relative z-50">
+
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6">
+
+        <!-- مساحة فارغة لعمل توازن -->
+        <div class="w-32"></div>
+
+        <!-- Navigation Center -->
+        <div class="flex items-center bg-white/5 border border-white/10 rounded-full px-2 py-1.5 backdrop-blur-md shadow-lg">
+
+            <a href="#" id="nav-home"
+               onclick="switchPage('home'); return false;"
+               class="nav-btn px-5 py-2 rounded-full text-sm font-medium bg-white/10 text-white border border-white/5 shadow-sm transition-colors">
+               Home
             </a>
-            
-            <div class="hidden md:flex items-center bg-white/5 border border-white/10 rounded-full px-2 py-1.5 backdrop-blur-md shadow-lg">
-                <a href="#" id="nav-home" onclick="switchPage('home'); return false;" class="nav-btn px-5 py-2 rounded-full text-sm font-medium bg-white/10 text-white border border-white/5 shadow-sm transition-colors">Home</a>
-                <a href="#" id="nav-projects" onclick="switchPage('projects'); return false;" class="nav-btn px-5 py-2 rounded-full text-sm font-medium text-slate-300 hover:text-white transition-colors">Projects</a>
-                <a href="#" id="nav-contact" onclick="switchPage('contact'); return false;" class="nav-btn px-5 py-2 rounded-full text-sm font-medium text-slate-300 hover:text-white transition-colors">Contact</a>
-            </div>
 
-            <div class="hidden md:flex gap-6 items-center text-sm font-medium text-slate-300">
-                <a href="https://github.com/bebo2646" class="hover:text-white transition-colors flex items-center gap-1.5">
-                    GitHub <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-70"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/belal-ahmed-b53499191?utm_source=share_via&utm_content=profile&utm_medium=member_ios" class="hover:text-white transition-colors flex items-center gap-1.5">
-                    LinkedIn <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-70"></i>
-                </a>
-                <a href="#" class="hover:text-white transition-colors flex items-center gap-1.5">
-                    Resume <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-70"></i>
-                </a>
-            </div>
+            <a href="#" id="nav-projects"
+               onclick="switchPage('projects'); return false;"
+               class="nav-btn px-5 py-2 rounded-full text-sm font-medium text-slate-300 hover:text-white transition-colors">
+               Projects
+            </a>
+
+            <a href="#" id="nav-contact"
+               onclick="switchPage('contact'); return false;"
+               class="nav-btn px-5 py-2 rounded-full text-sm font-medium text-slate-300 hover:text-white transition-colors">
+               Contact
+            </a>
+
         </div>
-    </nav>
 
-    <div class="max-w-5xl mx-auto px-4 pt-32 pb-20 relative z-10">
+        <!-- Social Links Right -->
+        <div class="flex gap-6 items-center text-sm font-medium text-slate-300">
+
+            <a href="https://github.com/bebo2646"
+               class="hover:text-white transition-colors flex items-center gap-1.5">
+                GitHub
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-70"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/belal-ahmed-b53499191"
+               class="hover:text-white transition-colors flex items-center gap-1.5">
+                LinkedIn
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-70"></i>
+            </a>
+
+            <a href="#"
+               class="hover:text-white transition-colors flex items-center gap-1.5">
+                Resume
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-70"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<div class="max-w-5xl mx-auto px-4 pt-32 pb-20 relative z-10">
+
+
+</nav>
+
+<div class="max-w-5xl mx-auto px-4 pt-32 pb-20 relative z-10">
 
         <!-- HOME -->
         <div id="page-home" class="page-section flex flex-col gap-10 fade-in">
